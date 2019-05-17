@@ -14,10 +14,10 @@ def R1(data1,data2,data3,data4):
     return senddata
 
 while(1):
-    TXD=R1(90,160,60,0)
+    TXD=R1(90,160,50,0)
     ser.write(TXD)
     time.sleep(1)
-    TXD=R1(90,160,60,28)
+    TXD=R1(90,160,50,28)
     ser.write(TXD)
     time.sleep(1)
     TXD=R1(90,90,90,28)
